@@ -30,7 +30,7 @@ h1{
     background-color: aqua;
 }
 
-#displayDisplay, #computerDisplay{
+#playerDisplay, #computerDisplay{
     font-size: 2.5rem;
 }
 
@@ -39,9 +39,13 @@ h1{
     margin: 30px 0;
 }
 
-.greenText{
+.greenText, #playerScoreDisplay{
     color: greenyellow;
 }
-.redText{
+.redText, #computerScoreDisplay{
     color: red;
+}
+
+.scoreDisplay{
+    font-size: 2rem;
 }
