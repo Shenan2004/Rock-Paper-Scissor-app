@@ -14,6 +14,11 @@ document.getElementById("submit").onclick = function(){
     const playerDisplay = document.getElementById("playerDisplay");
     const computerDisplay = document.getElementById("computerDisplay");
     const resultDisplay = document.getElementById("resultDisplay");
+    const playerScoreDisplay = document.getElementById("playerScoreDisplay");
+    const computerScoreDisplay = document.getElementById("computerScoreDisplay");
+    let playerScore = 0;
+    let computerScore = 0;
+
 
     function playGame(playerChoice){
 
@@ -45,8 +50,13 @@ document.getElementById("submit").onclick = function(){
         switch(result){
             case "YOU WIN!":
                 resultDisplay.classList.add("greenText");
+                playerScore++;
+                playerScoreDisplay.textContent = playerScore;
                 break;
             case "YOU LOOSE!":
                 resultDisplay.classList.add("redText");
+                computerScore++;
+                computerScoreDisplay.textContent = computerScore;
+                break;
         }
     }
